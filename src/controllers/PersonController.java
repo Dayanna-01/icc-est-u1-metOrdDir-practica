@@ -10,7 +10,7 @@ public class PersonController {
         for (int i = 0; i < people.length; i++) {
             boolean swapped = false;
             for (int j = 0; j < people.length - 1 - i; j++) {
-                if (people[j].getName().compareTo(people[j + 1].getName()) > 0) { //Aqui se hace el cambio 
+                if (people[j].getName().compareTo(people[j + 1].getName()) > 0) { //Aqui se hace el cambio para el orden alfabetico
                     Person temp = people[j];
                     people[j] = people[j + 1];
                     people[j + 1] = temp;
