@@ -1,8 +1,25 @@
 import models.Person;
+import controllers.PersonController;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        PersonController personaController = new PersonController();
+        Person[] people = makePersonList();
 
+        //  lista original
+        System.out.println("=== Lista original ===");
+        for (int i = 0; i < people.length; i++) {
+            System.out.println(people[i]);
+        }
+
+        // Ordenar por nombre (A-Z)
+        personaController.sortByName(people);
+
+        // lista ordenada
+        System.out.println("\n=== Lista ordenada por nombre ===");
+        for (int i = 0; i < people.length; i++) {
+            System.out.println(people[i]);
+        }
     }
 
     public static Person[] makePersonList() {
@@ -29,5 +46,4 @@ public class App {
         people[19] = new Person("Tina", 39);
         return people;
     }
-
 }
