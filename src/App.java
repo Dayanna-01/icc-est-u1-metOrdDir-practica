@@ -12,7 +12,7 @@ public class App {
             System.out.println(people[i]);
         }
 
-        // Ordenar por nombre (A-Z)
+        // Ordenar por nombre (A-132131231233113
         personaController.sortByName(people);
 
         // lista ordenada
